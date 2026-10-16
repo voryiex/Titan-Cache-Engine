@@ -1,18 +1,20 @@
-# Titan-Cache Enterprise
+# Titan-Cache Enterprise (V4.0)
 
-A production-ready, ultra-low latency `#![no_std]` in-memory cache and vector search engine written in Rust. Designed specifically for enterprise systems requiring deterministic performance, zero-copy parsing, and lock-free concurrency.
+A production-ready, ultra-low latency `#![no_std]` in-memory cache and SIMD vector search core written in Rust. Engineered specifically for enterprise systems demanding deterministic O(1) lock-free concurrency and bare-metal performance.
 
 ## Core Architectural Features
 
-- **Zero-Copy RESP3 Protocol Parser:** Parses complex array and bulk structures directly from network buffers without heap allocations or memory overhead.
-- **Dynamic Scale Quantization Vector Engine:** Implements SIMD-ready cosine similarity calculations with dynamic range scaling (f32 to i8) maintaining high precision while reducing memory footprint by 75%.
-- **Clock-Pro Eviction Mechanism:** Advanced lock-free cache eviction and zero-pause background garbage collection to prevent latency spikes under heavy write loads.
-- **Copy-On-Write (CoW) Snapshots & Raft Core:** Built-in foundational structures for crash recovery, persistent state snapshots, and distributed cluster consensus.
+- **O(1) Atomic Lock-Free Hash Map:** Features zero-mutex Compare-And-Swap (CAS) write/read mechanics using atomic slot indexing and dynamic linear probing.
+- **Fast FNV-1a Hash Engine:** Inline micro-optimized hash algorithm providing direct memory slot resolution without allocations.
+- **Native Linux Epoll Event Loop:** Direct `extern "C"` syscall bindings (`epoll_create1`, `epoll_ctl`) for low-overhead asynchronous I/O handling.
+- **Zero-Copy RESP3 Protocol Support:** Direct byte-level parsing directly from network buffers without heap overhead.
+- **Dynamic Scale Quantization Vector Engine:** SIMD-ready cosine similarity calculations with dynamic range scaling (f32 to i8) reducing memory footprint by 75%.
 
 ## Project Status & Full IP Acquisition
 
-This codebase represents a complete V2.0 production core. The entire intellectual property (Full IP Transfer) is available for purchase for infrastructure engineering firms, database developers, or AI startups looking to integrate a high-performance memory and vector subsystem.
+This codebase represents a complete V4.0 high-concurrency production core. The entire intellectual property (Full IP Transfer) is available for purchase for infrastructure engineering firms, database developers, or AI startups looking to integrate a high-performance memory subsystem.
 
-For acquisition inquiries, pricing, and full source code handover details, reach out directly via repository contact channels.
-**Discord:** voryiex
-**Email:** voryiex@gmail.com
+For acquisition inquiries, pricing, and full source code handover details, reach out directly:
+
+- **Discord:** @voryiex
+- **Email:** voryiex@gmail.com
