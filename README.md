@@ -14,3 +14,5 @@ A production-ready, ultra-low latency `#![no_std]` in-memory cache and vector se
 This codebase represents a complete V2.0 production core. The entire intellectual property (Full IP Transfer) is available for purchase for infrastructure engineering firms, database developers, or AI startups looking to integrate a high-performance memory and vector subsystem.
 
 For acquisition inquiries, pricing, and full source code handover details, reach out directly via repository contact channels.
+**Discord:** voryiex
+**Email:** voryiex@gmail.com
